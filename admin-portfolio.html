@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/fe5578c0cc.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+ </head>
+ <body class="bg-lig">
+ <div class="vh-auto text-black">
+    <nav class="navbar navbar-expand-lg bg-pl">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand">Sto Studio</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+          <ul class="nav nav-underline" style="margin-left:auto; padding:20px;">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Main Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
+            </li>
+          </ul>
+      </div>
+        </div>
+      </nav>
+      
+
+    <div class="container mt-5 content">
+      <h1 class="text-center mb-5">Portfolio</h1>
+<div class="row mb-3"><div class="col-12 text-center">
+  <a type="submit" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2 submitcolor">Wszystkie</a>
+  <a type="submit" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2 submitcolor">Dom</a>
+  <a type="submit" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2 submitcolor">Lokal użytkowy</a>
+  <a type="submit" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover p-2 submitcolor">Mieszkanie</a>
+</div></div>
+      <div class="row d-flex">
+        <div class="col menu-item testdiv mb-4" onmouseover="showHiddenContent(this)" onmouseout="hideHiddenContent(this)">
+          <img class="photo" src="img1.jpeg" alt="">
+          <h3 class="centered visually-hidden">Tęczowa 50m2</h3>
+          <h5 class="centered2 visually-hidden">Dom / Mieszkanie</h5>
+          <br>
+          <a class="h5 text-black" href="#">Edit</a>
+          <a class="h5 text-black" href="#">Delete</a>
+
+        </div>
+        <div class="col menu-item testdiv mb-4" onmouseover="showHiddenContent(this)" onmouseout="hideHiddenContent(this)">
+          <img class="photo" src="img2.jpeg" alt="">
+          <h3 class="centered visually-hidden">Tęczowa 50m2</h3>
+          <h5 class="centered2 visually-hidden">Dom / Mieszkanie</h5>
+          <br>
+          <a class="h5 text-black" href="#">Edit</a>
+
+        </div>
+        <div class="col menu-item testdiv mb-4" onmouseover="showHiddenContent(this)" onmouseout="hideHiddenContent(this)">
+          <img class="photo" src="img3.jpeg" alt="">
+          <h3 class="centered visually-hidden">Tęczowa 50m2</h3>
+          <h5 class="centered2 visually-hidden">Dom / Mieszkanie</h5>
+          <br>
+          <a class="h5 text-black" href="#">Edit</a>
+        </div>  
+        <div class="col menu-item testdiv mb-4" onmouseover="showHiddenContent(this)" onmouseout="hideHiddenContent(this)">
+          <img class="photo" src="img3.jpeg" alt="">
+          <h3 class="centered visually-hidden">Tęczowa 50m2</h3>
+          <h5 class="centered2 visually-hidden">Dom / Mieszkanie</h5>
+          <br>
+          <a class="h5 text-black" href="#">Edit</a>
+        </div>  
+        
+      </div>
+    </div>
+      
+
+    </div>
+
+    <div class="container-fluid text-center">
+      <footer class="row py-5 mt-5 border-top bg-pl">
+    
+        <div class="col mb-3">
+          <h5>Follow Us</h5>
+          <ul class="nav flex-column mt-3 ">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 d-inline">
+                  <i class="fa-brands fa-xl fa-instagram"></i>
+                </a>
+                <a href="#" class="nav-link p-0 d-inline">
+                  <i class="fa-brands fa-xl fa-facebook"></i>
+                </a>
+              </li>
+          </ul>
+        </div>           
+        <div class="col mb-3">
+          <h5>Navigation</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Main Page</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Projects</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col mb-3">
+          <i class="fa-solid fa-phone"> </i> 693 228 106<br>
+           studiosto.wnetrza@gmail.com
+        </div>
+      </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

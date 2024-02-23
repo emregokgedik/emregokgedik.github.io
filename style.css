@@ -1,0 +1,313 @@
+*{
+  border: 0;
+}
+.bg-image{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: changeImage 12s infinite; /* Geçiş süresi ve tekrar sayısı ayarlanabilir */
+}
+@keyframes changeImage {
+  0%,100%{
+    background-image: url("https://instagram.fopo5-1.fna.fbcdn.net/v/t39.30808-6/410140582_844575570797378_660498445503114291_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDgxMC5zZHIifQ&_nc_ht=instagram.fopo5-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=XqSSGuw8aiQAX82dQn1&edm=ACWDqb8AAAAA&ccb=7-5&ig_cache_key=MzI1NzU0NzY5Nzg5ODU3Mjk5Nw%3D%3D.2-ccb7-5&oh=00_AfDiezNVia1tqIUQdfiQdcK2DxhK5VUhY0UHg7aiVoRqeA&oe=65BBD6D2&_nc_sid=ee9879");
+  }
+  33.33% {
+    background-image: url("https://instagram.fopo5-2.fna.fbcdn.net/v/t39.30808-6/358657413_17934361598694529_3499120293590679334_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi45MDB4NTA2LnNkciJ9&_nc_ht=instagram.fopo5-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=BghM5gGoa2QAX_rES8d&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE0NTg0NjQwNzc4ODYzMDQyOA%3D%3D.2-ccb7-5&oh=00_AfALLKZe-xevh_P2CK8bYAZpAct0h27GUwuW29kUEHRrBw&oe=65BC1BC0&_nc_sid=b41fef");
+  }
+  66.66% {
+    background-image: url("https://instagram.fopo5-2.fna.fbcdn.net/v/t39.30808-6/395504524_17949971249694529_5673082235959040726_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDgxMC5zZHIifQ&_nc_ht=instagram.fopo5-2.fna.fbcdn.net&_nc_cat=101&_nc_ohc=UAqGE6shNNgAX8zBhtA&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzIyMjczNjc4MTY2NDI5NzQ3MQ%3D%3D.2-ccb7-5&oh=00_AfDzbts_b3mZf6mx_O2p9vcN0FlCmJQnQrF1PItbTiuFog&oe=65BCD2A0&_nc_sid=b41fef");
+  }
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    text-align:center;
+    padding: 20px;
+  }
+  .bg-pl{
+    background-color: #d9d0c6;
+  }
+  .border-top{
+    border-top: var(--bs-border-width) var(--bs-border-style) #dee2e6 !important;
+  }
+  .nav-link{
+    color:#695548;
+  }
+  .nav-link:hover{
+    color:#4b3c33;
+  }
+  .nav-link:focus{
+    color:#4b3c33;
+  }
+  .navbar-brand{
+    margin-left:100px;
+    font-size: 2.5rem;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;;
+    font-style: normal;
+
+  }
+  .bg-def{
+    background-color: #d3bfb6;
+  }
+  .bg-lig{
+    background-color: #e7e3d7;
+  }
+  .form-control:focus{
+    border-color: #b6a59d;
+    box-shadow: 0 0 0 0.25rem rgb(104 86 72 / 25%);
+  }
+  .submitcolor{
+    color:red;
+  }
+  .form-select{
+    padding:2.25rem .375rem .75rem;
+  }
+
+
+.photo{
+  margin-bottom:20px;
+  height: 234px;
+  width: auto;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* 600 piksel genişlikten küçük cihazlar için */
+@media screen and (max-width: 600px) {
+  .photo {
+      height: 200px; /* Özel yükseklik değeri */
+  }
+}
+
+/* 800 piksel genişlikten küçük cihazlar için */
+@media screen and (max-width: 800px) {
+  .photo {
+      height: 190px; /* Başka bir özel yükseklik değeri */
+  }
+}
+
+.menu-item{
+  backdrop-filter: blur(1px) opacity(1);
+  transition: .5s ease-in-out;
+  transform: scale(1.00); 
+}
+.menu-item:hover{
+  transition: .5s ease-in-out;
+  transform: scale(1.05); 
+  
+}
+.menu-item>img{
+  cursor: pointer;
+  filter: blur(0px) opacity(1);
+  transition: filter,box-shadow .5s ease-in-out;
+  box-shadow: 0;
+  background-color: black;
+}
+.menu-item>img:hover{
+  filter: blur(1px) opacity(1);
+  -webkit-box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+  -moz-box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+  box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+  transition: filter,box-shadow .5s ease-in-out;
+}
+    /*
+.menu-item>img:hover{
+  background:#e7e3d7;
+  opacity: 0;
+  transition: box-shadow .5s ease-in-out;
+  -webkit-box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+  -moz-box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+  box-shadow: -1px 14px 5px -6px rgba(105,86,72,0.32);
+}*/
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  pointer-events: none; 
+
+}
+.centered2 {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  pointer-events: none;
+}
+.testdiv {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.content{
+  min-height: 100vh;
+}
+.carousel-item{
+  pointer-events: none; 
+}
+.carousel-item img{
+  height: auto;
+  width: 100%;
+}
+.img-fluid{
+  margin-bottom: 18px;
+  transition: .5s ease-in-out;
+  border-radius: 10px;
+}
+.img-fluid:hover{
+  opacity: 0.8;
+  transform: scale(1.05); 
+  transition: .5s ease-in-out;
+}
+.card{
+  min-height: 200px;
+  margin-right: 20px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.divider-sp {
+  margin: 5rem 0;
+}
+hr{
+  color: inherit;
+    border: 0;
+    border-top: var(--bs-border-width) solid;
+    opacity: .25;
+}
+.btn{
+  color: white;
+  padding: 0.65em;
+  background-color: #695548;
+}
+.btn:hover {
+  background-color: transparent;
+  border: 1px solid #4b3c33;
+}
+.btn:focus .btn:active{
+  background-color: #473930!important;
+  color:white;
+}
+.circle {
+  border: 0.1em dotted #695548;
+  border-radius: 100%;
+  height: 8em;
+  width: 8em;
+  text-align: center;
+  vertical-align: center;
+}
+
+.circle p {
+margin-top: 1.2em;
+  font-size: 2em;
+  font-family: sans-serif;
+  color: black;
+}
+.process-section{
+  background-color: #f6f6f6;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 4rem;
+}
+.link-secondary:hover{
+  text-decoration-color:#695548!important;
+}
+.process-section .mx-5 {
+  padding: 3.5em;
+  border: 1px dashed #695548;
+  border-radius: 50px;
+}    .h3-with-line {
+  position: relative;
+}
+
+.h3-with-line:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Çizginin uzunluğunu ayarlayabilirsiniz */
+  height: 2px; /* Çizginin kalınlığını ayarlayabilirsiniz */
+  background-color: brown; /* Çizgi rengi */
+}.custom-list {
+  list-style: none; /* Listenin önündeki siyah noktayı kaldırır */
+}
+
+.custom-list li::before {
+  content: "";
+  display: inline-block;
+  width: 6px; 
+  height: 2px; 
+  border-radius: 3px;
+  vertical-align: middle;
+  background-color: brown; 
+  margin-right: 5px; 
+}
+ul{
+  padding:0;
+}
+.fancy-border-radius {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+/* These are ADDITIONAL styles - add them if you want an object exactly like in the demo above */
+width: 400px;
+height: 400px;
+background: #ad5389;
+background: -webkit-linear-gradient(
+  to right,
+  #3c1053,
+  #ad5389
+);
+background: linear-gradient(
+  to right,
+  #3c1053,
+  #ad5389
+);
+
+}
+li{
+  margin-top: 10px;
+}
+.process-section .col-12{
+  padding: 20px;
+}
+.process-section .col-12:hover{
+  box-shadow: rgba(105,85,72, 0.19) 0px 10px 20px, rgba(105,85,72, 0.23) 0px 6px 6px;
+  border-radius: 50px;
+}
+.col,.col-12{
+  transition: 0.4s;
+}
+.fa-brands{
+  padding: 15px;
+}
+.btn-offer{
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 768px) {
+  .process-section .mx-5 {
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    padding-top: 1.5em;
+  }
+
+.process-section .col{
+  padding: 14px;
+}
+  .circle{
+    height: 6em;
+    width: 6em;
+  }
+  .circle p{
+    margin-top: 0.8em;
+  }
+  .mx-5{
+    margin-right: 0.5em!important;
+    margin-left: 0.5em!important;
+  }
+}
